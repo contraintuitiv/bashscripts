@@ -1,0 +1,7 @@
+bluetoothctl untrust EB:06:BF:A6:23:DE
+bluetoothctl remove EB:06:BF:A6:23:DE
+bluetoothctl pair EB:06:BF:A6:23:DE
+bluetoothctl scan on
+bluetoothctl scan off
+bluetoothctl pair EB:06:BF:A6:23:DE
+bluetoothctl connect EB:06:BF:A6:23:DE
