@@ -1,0 +1,3 @@
+as superuser
+
+sudo -u nextcloud php8.2 --define apc.enable_cli=1 /var/www/nextcloud/occ memories:index
