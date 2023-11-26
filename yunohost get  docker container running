@@ -1,0 +1,2 @@
+use redirect app with a port e.g. `11000`, then
+`docker run -d -p 0.0.0.0:11000:80 helloworld`
