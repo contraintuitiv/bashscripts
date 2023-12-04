@@ -1,0 +1,6 @@
+# disabling my broken t440s touchscreen
+# long press to focus
+
+xinput
+
+xinput disable 10
