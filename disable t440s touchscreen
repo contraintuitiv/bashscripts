@@ -4,3 +4,22 @@
 xinput
 
 xinput disable 10
+
+
+# on wayland
+
+Using the ability to disable a single USB device, we need just to create a UDEV rule. Create the file in
+
+`/etc/udev/rules.d/80-touchscreen.rules`
+With following information
+
+`SUBSYSTEM=="usb", ATTRS{idVendor}=="04f3", ATTRS{idProduct}=="20d0", ATTR{authorized}="0"`
+You can find idVendor and idProduct by running
+
+`cat /proc/bus/input/devices`
+You can reload the rules without restart
+
+`udevadm control --reload-rules && udevadm trigger`
+
+
+https://askubuntu.com/questions/927022/how-can-i-disable-touchscreen-while-using-wayland
